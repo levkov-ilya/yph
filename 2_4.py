@@ -1,22 +1,17 @@
+# 2_4_D
 
-n = 8
-m = 5
-i, j = 0, 0
-while i <= n:
-    while j <= m:
-        print(f"j = {j}")
-        j += 1
-    print(f"i = {i}")
+""" count, i = int(input()), 1
+s = ""
+res = 0
+while i <= count:
+    d = input()
+    s += d  
     i += 1
-
-
-""" number, sum = input(), 0
-
-for x in number:
-    sum += int(x)
-print(sum) """
-
-# 2_3_C
+for x in s:
+    res += int(x)
+print(res)
+ """
+# 2_4_C
 """ max_number = int(input())
 
 row = 1  # номер строки, которую мы собираемся выводить
@@ -30,7 +25,6 @@ while number <= max_number:
         col += 1
     row += 1
     col = 0 """
-        
 
 """ s = 0
 v = 0
@@ -43,10 +37,6 @@ for i in range(1, 5):
             s += 1
     print() """
         
-
-
-
-
 # 2_4_B
 """ n = int(input())
 
