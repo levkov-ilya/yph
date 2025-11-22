@@ -1,4 +1,58 @@
+# 2_5_J
+
+res = []
+i = 0
+count = 0
+while (text := input()) != "ФИНИШ":
+    text = text.lower()
+    for x in text:
+        res.append(x)
+    i +=1
+
+print(res)
+num_res_count = 0
+num_res = []
+for x in res:
+    if x in res:
+        num_res_count += 1
+    num_res.append(num_res_count)
+
+print(num_res)
+print()
+
+# 2_5_I
+
+""" res = []
+while (text := input()) != "":
+    if text.startswith("#"):
+        pass
+    elif ("#" in text) and (text.index("#") != 0):
+        res.append(text[:text.index("#"):].rstrip())
+    else:
+        res.append(text)
+
+for _ in res:
+    print(_) """
+
+# 2_5_G
+
+""" areas = int(input())
+i = 1
+res = []
+while i <= areas:
+    text = input()
+    if "зайка" in text:
+        res.append(text.index("зайка") + 1)
+    else:
+        res.append("Заек нет =(")
+    i += 1
+
+for _ in res:
+    print(_) """
+
 # 2_5_F
+""" a, b = input().split(" ")
+print(int(a) + int(b)) """
 
 # 2_5_F
 
