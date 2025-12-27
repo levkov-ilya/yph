@@ -1,24 +1,96 @@
+# 2_5_N
+nums, pow = input(), int(input())
+
+arr = nums.split(" ")
+
+res_arr = []
+for x in arr:
+    res_arr.append(str(int(x) ** pow))
+
+res_str = " ".join(res_arr)
+print(res_str)
+
+# 2_5_M
+""" count = int(input())
+arr = []
+for x in range(count):
+    arr.append(int(input()))
+
+power = int(input())
+for x in arr:
+    print(x ** power) """
+
+# 2_5_L
+
+""" arr = ["Манная", "Гречневая", "Пшённая", "Овсяная", "Рисовая"]
+
+days = int(input())
+if days == len(arr):
+    for x in arr:
+        print(x)
+elif days < len(arr):
+    for x in arr[:days:]:
+        print(x)
+else:
+    full_days = days // 5
+    remain_days = days % 5
+
+    res_arr = arr * full_days + arr[:remain_days:]
+    for x in res_arr:
+        print(x) """
+
+
+# 2_5_K
+
+""" count = int(input())
+pages = []
+for x in range(0, count):
+    pages.append(input())
+
+search_word = input()
+
+for x in pages:
+    if search_word.lower() in str(x).lower():
+        print(x) """
+
+
+""" def search(arr: list, word: str) -> None:
+    for x in arr:
+        res = str(x).lower()
+        if word in res:
+            print(x)
+
+arr = ["сериал шерлок смотреть онлайн"
+        , "учебник питона"
+        , "мемы"
+        , "социальная сеть"
+        , "упражнения по питону"
+        , "кормовые мыши для питонов"
+        , "ответы егэ скачать бесплатно"
+        , "компьютерные мыши"]
+word = "питон"
+
+search(arr, word) """
+
+
 # 2_5_J
 
-res = []
-i = 0
-count = 0
+""" res = []
 while (text := input()) != "ФИНИШ":
     text = text.lower()
+    text = text.replace(" ", "")
     for x in text:
         res.append(x)
-    i +=1
 
-print(res)
-num_res_count = 0
-num_res = []
+res.sort(reverse=False)
+
+count = 0
+letter = ""
 for x in res:
-    if x in res:
-        num_res_count += 1
-    num_res.append(num_res_count)
-
-print(num_res)
-print()
+    if count < res.count(x):
+        count = res.count(x)
+        letter = x
+print(letter) """
 
 # 2_5_I
 
