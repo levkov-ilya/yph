@@ -30,14 +30,21 @@ trans_dict = {"А": "A"
                 , "Ю": "IU"
                 , "Я": "IA"}
 
-name = ["ИЛЬЯ", "ЛЕВКОВ"]
-result_list = []
+print(type(trans_dict))
+print(trans_dict)
+
+name = "ИЛЬЯ ЛЕВКОВ Илья Левков"
+result_list = list(name)
 for letter in name:
+    print(letter)
+
+result = []
+for letter in result_list:
     for key in trans_dict:
         if letter == key:
-            result_list.append[trans_dict[key]]
+            result.append(trans_dict[key])
 
-print(result_list)
+print(result)
 
         
 
