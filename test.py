@@ -1,50 +1,24 @@
-trans_dict = {"А": "A" 
-                ,"Б": "B"
-                , "В": "V"
-                , "Г": "G"
-                , "Д": "D"
-                , "Е": "E"
-                , "Ё": "E"
-                , "Ж": "ZH"
-                , "З": "Z"
-                , "И": "I"
-                , "Й": "I"
-                , "К": "K"
-                , "Л": "L"
-                , "М": "M"
-                , "Н": "N"
-                , "О": "O"
-                , "П": "P"
-                , "Р": "R"
-                , "С": "S"
-                , "Т": "T"
-                , "У": "U"
-                , "Ф": "F"
-                , "Х": "KH"
-                , "Ц": "TC"
-                , "Ч": "CH"
-                , "Ш": "SH"
-                , "Щ": "SHCH"
-                , "Ы": "Y"
-                , "Э": "E"
-                , "Ю": "IU"
-                , "Я": "IA"}
+TRANS_DICT = {
+    "А": "A", "Б": "B", "В": "V", "Г": "G", "Д": "D", "Е": "E", 
+    "Ё": "E", "Ж": "ZH", "З": "Z", "И": "I", "Й": "I", "К": "K", 
+    "Л": "L", "М": "M", "Н": "N", "О": "O", "П": "P", "Р": "R", 
+    "С": "S", "Т": "T", "У": "U", "Ф": "F", "Х": "KH", "Ц": "TC", 
+    "Ч": "CH", "Ш": "SH", "Щ": "SHCH", "Ы": "Y", "Э": "E", "Ю": "IU", 
+    "Я": "IA", "Ь": "", "Ъ": ""
+}
 
-print(type(trans_dict))
-print(trans_dict)
-
-name = "ИЛЬЯ ЛЕВКОВ Илья Левков"
-result_list = list(name)
-for letter in name:
-    print(letter)
-
-result = []
-for letter in result_list:
-    for key in trans_dict:
-        if letter == key:
-            result.append(trans_dict[key])
+result = ""
+for char in input():
+    char_copy = char.upper()
+    if char_copy in TRANS_DICT:
+        if char.isupper():
+            char = TRANS_DICT[char_copy].capitalize()
+        else:
+            char = TRANS_DICT[char_copy].lower()
+    result += char
 
 print(result)
+
 
         
 

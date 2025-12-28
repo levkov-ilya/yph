@@ -1,7 +1,83 @@
+# 3_2_M
+
+
+
+# 3_2_L
+""" n = int(input())
+
+names = []
+for _ in range(n):
+    names.append(input())
+
+counter = {}
+for name in names:
+    if name not in counter:
+        counter[name] = 1
+    else:
+        counter[name] += 1
+
+count = 0
+res = []
+for key, value in counter.items():
+    if value > 1:
+        res.append(key + " - " + str(value))
+
+res = sorted(res)
+
+if len(res) > 0:
+    for x in res:
+        print(x)
+else:
+    print("Однофамильцев нет") """
+
+# print(count)
+
+
+# 3_2_K
+
+""" n = int(input())
+
+names = []
+for _ in range(n):
+    names.append(input())
+
+counter = {}
+for name in names:
+    if name not in counter:
+        counter[name] = 1
+    else:
+        counter[name] += 1
+
+count = 0
+for value in counter.values():
+    if value > 1:
+        count += value
+
+print(count)
+ """
+
+
 # 3_2_J
+""" TRANS_DICT = {
+    "А": "A", "Б": "B", "В": "V", "Г": "G", "Д": "D", "Е": "E", 
+    "Ё": "E", "Ж": "ZH", "З": "Z", "И": "I", "Й": "I", "К": "K", 
+    "Л": "L", "М": "M", "Н": "N", "О": "O", "П": "P", "Р": "R", 
+    "С": "S", "Т": "T", "У": "U", "Ф": "F", "Х": "KH", "Ц": "TC", 
+    "Ч": "CH", "Ш": "SH", "Щ": "SHCH", "Ы": "Y", "Э": "E", "Ю": "IU", 
+    "Я": "IA", "Ь": "", "Ъ": ""
+}
 
-trans_dict = {}
+result = ""
+for char in input():
+    char_copy = char.upper()
+    if char_copy in TRANS_DICT:
+        if char.isupper():
+            char = TRANS_DICT[char_copy].capitalize()
+        else:
+            char = TRANS_DICT[char_copy].lower()
+    result += char
 
+print(result) """
 
 # 3_2_I
 
