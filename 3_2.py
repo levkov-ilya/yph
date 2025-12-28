@@ -1,3 +1,30 @@
+# 3_2_J
+
+trans_dict = {}
+
+
+# 3_2_I
+
+""" areas = ""
+while True:
+    area = input()
+    if area == "":
+        break
+    else:
+        areas += area + " "
+areas = areas.strip()
+areas_list = list(areas.split())
+
+counter = {}
+for x in areas_list:
+    if x not in counter:
+        counter[x] = 1
+    else:
+        counter[x] += 1
+
+for key, value in counter.items():
+    print(f"{key} {value}") """
+
 # 3_2_H
 
 """ new_list = []

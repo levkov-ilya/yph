@@ -1,4 +1,65 @@
-new_list = []
+trans_dict = {"А": "A" 
+                ,"Б": "B"
+                , "В": "V"
+                , "Г": "G"
+                , "Д": "D"
+                , "Е": "E"
+                , "Ё": "E"
+                , "Ж": "ZH"
+                , "З": "Z"
+                , "И": "I"
+                , "Й": "I"
+                , "К": "K"
+                , "Л": "L"
+                , "М": "M"
+                , "Н": "N"
+                , "О": "O"
+                , "П": "P"
+                , "Р": "R"
+                , "С": "S"
+                , "Т": "T"
+                , "У": "U"
+                , "Ф": "F"
+                , "Х": "KH"
+                , "Ц": "TC"
+                , "Ч": "CH"
+                , "Ш": "SH"
+                , "Щ": "SHCH"
+                , "Ы": "Y"
+                , "Э": "E"
+                , "Ю": "IU"
+                , "Я": "IA"}
+
+name = ["ИЛЬЯ", "ЛЕВКОВ"]
+result_list = []
+for letter in name:
+    for key in trans_dict:
+        if letter == key:
+            result_list.append[trans_dict[key]]
+
+print(result_list)
+
+        
+
+
+# !!! 
+""" ex_list = ["sample", "example"]
+ex_tuple = ("1", "sample", "example")
+ex_set = {"sample", "example"}
+ex_dict = {"1": "sample", "2": "example"}
+
+print(ex_list)
+for x in ex_list:
+    print(x)
+
+
+
+print(type(ex_list))
+print(type(ex_tuple))
+print(type(ex_set))
+print(type(ex_dict)) """
+
+""" new_list = []
 
 child_num = int(input()) 
 
@@ -21,7 +82,7 @@ if len(result) == 0:
     print("Таких нет")
 else:
     for x in result:
-        print(x)
+        print(x) """
 # print(result)
 
 """ MORSE_CODE_DICT = {
