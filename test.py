@@ -1,4 +1,4 @@
-TRANS_DICT = {
+""" TRANS_DICT = {
     "А": "A", "Б": "B", "В": "V", "Г": "G", "Д": "D", "Е": "E", 
     "Ё": "E", "Ж": "ZH", "З": "Z", "И": "I", "Й": "I", "К": "K", 
     "Л": "L", "М": "M", "Н": "N", "О": "O", "П": "P", "Р": "R", 
@@ -17,25 +17,22 @@ for char in input():
             char = TRANS_DICT[char_copy].lower()
     result += char
 
-print(result)
+print(result) """
 
 
         
 
 
 # !!! 
-""" ex_list = ["sample", "example"]
+ex_list = ["sample", "example"]
 ex_tuple = ("1", "sample", "example")
 ex_set = {"sample", "example"}
-ex_dict = {"1": "sample", "2": "example"}
-
-print(ex_list)
-for x in ex_list:
-    print(x)
+ex_dict = {"1": ("sample", "exmple"), "2": "example"}
+ex_dict.update("test")
+print(ex_dict)
 
 
-
-print(type(ex_list))
+""" print(type(ex_list))
 print(type(ex_tuple))
 print(type(ex_set))
 print(type(ex_dict)) """

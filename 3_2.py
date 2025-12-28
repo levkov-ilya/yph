@@ -1,5 +1,22 @@
 # 3_2_M
 
+food_amount = int(input)
+food_names = {}
+
+
+
+""" food_amount = int(input())
+food_names = []
+for _ in range(food_amount):
+    food_names.append(input())
+
+days = int(input())
+
+for _ in range(days):
+    food_amount_in_day = int(input())
+    for day in food_amount_in_day: """
+
+
 
 
 # 3_2_L
